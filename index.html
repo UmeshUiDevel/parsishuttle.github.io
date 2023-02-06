@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <title>Paris Shuttle</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+
+    <!-- External CSS libraries -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-submenu.css">
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-select.min.css">
+    <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
+    <link rel="stylesheet" type="text/css" href="css/daterangepicker.css">
+    <link rel="stylesheet" href="css/leaflet.css" type="text/css">
+    <link rel="stylesheet" href="css/map.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" type="text/css" href="fonts/linearicons/style.css">
+    <link rel="stylesheet" type="text/css"  href="css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" type="text/css"  href="css/dropzone.css">
+    <link rel="stylesheet" type="text/css"  href="css/slick.css">
+
+    <!-- Custom stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" id="style_sheet" href="css/skins/default.css">
+
+    <!-- Favicon icon -->
+    <link rel="shortcut icon" href="img/logo.png" type="image/png" >
+
+    <!-- Google fonts -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,300,700">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800%7CPlayfair+Display:400,700%7CRoboto:100,300,400,400i,500,700">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link rel="stylesheet" type="text/css" href="css/ie10-viewport-bug-workaround.css">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script  src="js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script  src="js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script  src="js/html5shiv.min.js"></script>
+    <script  src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="page_loader"></div>
+
+<!-- Main header start -->
+<header class="main-header sticky-header">
+<div class="heading-slider">
+<div class="container-fluid">
+<marquee width="100%" direction="left">
+    <p>Our new standard telephone line is now the +33 (0) 1 85 08 06 03.</p>
+</marquee>
+</div>
+</div>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand logo" href="index.html">
+                <img src="img/logos/logo.png" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Intercity rides
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Chauffeur hailing
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Airport Shuttle
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Vehicle Selection
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="index.html">Business Class</a></li>
+                            <li><a class="dropdown-item" href="index-2.html">Business Van/SUV</a></li>
+                            <li><a class="dropdown-item" href="index-3.html">First Class</a></li>
+                            <li><a class="dropdown-item" href="index-4.html">Sprinter Class</a></li>
+                            <li><a class="dropdown-item" href="index-5.html">Electric Class</a></li>
+                        </ul>
+                    </li>
+                         
+                                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Contact
+                        </a>
+                    </li>
+                                   <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-flag mr-2"></i>Language
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="index.html">English</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="signin.html" class="nav-link link-color" style="color: #fff"><i class="flaticon-logout"></i> Login</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+<!-- Main header end -->
+
+<!-- Banner start -->
+<div class="banner bnr-2" id="banner">
+    <div id="bannerCarousole" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item banner-max-height active item-bg">
+                <img class="d-block w-100 h-100" src="img/banner/img-1.jpg" alt="banner">
+                <div class="carousel-caption banner-slider-inner d-flex text-center">
+                    <div class="carousel-content container">
+                        <div class="text-center">
+                            <h2>SEMI PRIVATE TRANSFER</h2>
+                            <p>Safety is the utmost priority yet we are still able to offer a great service at a really economical price. <br>The service will allow a maximum of only 2 pick ups or drop offs per minivan.</p>
+                            <div class="inline-search-area  m-auto">
+                                <div class="search-boxs">
+                                    <div class="search-col">
+                                        <input type="text" name="search" class="form-control has-icon" placeholder="What are you looking for?">
+                                    </div>
+                                    <div class="search-col">
+                                        <i class="fa fa-car icon-append"></i>
+                                        <input type="text" name="Passenger " class="form-control has-icon" placeholder="Passenger ">
+                                    </div>
+                                    <div class="search-col categories">
+                                        <select class="selectpicker search-fields" name="location">
+                                            <option>Airport - Itinerary</option>
+                                            <option>Airport -> Eurodisney</option>
+                                            <option>Paris Train Station -> Paris</option>
+                                            <option>Airport -> Paris City</option>
+                                        </select>
+                                    </div>
+                                    <div class="find">
+                                        <button class="btn button-theme btn-search btn-block">
+                                            <i class="fa fa-calculator"></i><strong>Calculate</strong>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <div class="carousel-item banner-max-height  item-bg">
+                <img class="d-block w-100 h-100" src="img/banner/img-1.jpg" alt="banner">
+                <div class="carousel-caption banner-slider-inner d-flex text-center">
+                    <div class="carousel-content container">
+                        <div class="text-center">
+                            <h2>PRIVATE TRANSFER</h2>
+                            <p>In a private transfer, a driver in uniform will be waiting for you at the airport with a signboard in your name. <br>You will be accompanied in a comfortable, fully reserved vehicle directly to your meeting point.
+</p>
+                            <div class="inline-search-area  m-auto">
+                                <div class="search-boxs">
+                                    <div class="search-col">
+                                        <input type="text" name="search" class="form-control has-icon" placeholder="What are you looking for?">
+                                    </div>
+                                    <div class="search-col">
+                                        <i class="fa fa-car icon-append"></i>
+                                        <input type="text" name="Passenger " class="form-control has-icon" placeholder="Passenger ">
+                                    </div>
+                                    <div class="search-col categories">
+                                        <select class="selectpicker search-fields" name="location">
+                                            <option>Airport - Itinerary</option>
+                                            <option>Airport -> Eurodisney</option>
+                                            <option>Paris Train Station -> Paris</option>
+                                            <option>Airport -> Paris City</option>
+                                        </select>
+                                    </div>
+                                    <div class="find">
+                                        <button class="btn button-theme btn-search btn-block">
+                                            <i class="fa fa-calculator"></i><strong>Calculate</strong>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <a class="carousel-control-prev" href="#bannerCarousole" role="button" data-slide="prev">
+            <span class="slider-mover-left" aria-hidden="true">
+                <i class="fa fa-angle-left"></i>
+            </span>
+        </a>
+        <a class="carousel-control-next" href="#bannerCarousole" role="button" data-slide="next">
+            <span class="slider-mover-right" aria-hidden="true">
+                <i class="fa fa-angle-right"></i>
+            </span>
+        </a>
+    </div>
+</div>
+<!-- Banner end -->
+
+<!-- Partners strat -->
+<div class="partners">
+    <div class="container">
+      <marquee width="100%" direction="left" height="50px">
+        <div class="slick-slider-area">
+            <div class="row slick-carousel" data-slick='{"slidesToShow": 5, "responsive":[{"breakpoint": 1024,"settings":{"slidesToShow": 3}}, {"breakpoint": 768,"settings":{"slidesToShow": 2}}]}'>
+                <div class="slick-slide-item"><img src="img/brand/brand-1.png" alt="brand" class="img-fluid"></div>
+                <div class="slick-slide-item"><img src="img/brand/brand-2.png" alt="brand" class="img-fluid"></div>
+                <div class="slick-slide-item"><img src="img/brand/brand-3.png" alt="brand" class="img-fluid"></div>
+                <div class="slick-slide-item"><img src="img/brand/brand-4.png" alt="brand" class="img-fluid"></div>
+                <div class="slick-slide-item"><img src="img/brand/brand-1.png" alt="brand" class="img-fluid"></div>
+                <div class="slick-slide-item"><img src="img/brand/brand-2.png" alt="brand" class="img-fluid"></div>
+                <div class="slick-slide-item"><img src="img/brand/brand-3.png" alt="brand" class="img-fluid"></div>
+                <div class="slick-slide-item"><img src="img/brand/brand-4.png" alt="brand" class="img-fluid"></div>
+            </div>
+        </div>
+    </marquee>
+    </div>
+</div>
+<!-- Partners end -->
+
+
+<!-- Categories strat -->
+<div class="categories content-area-7">
+    <div class="container">
+        <!-- Main title -->
+        <div class="main-title text-center">
+            <h1>Featured Categories</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="row">
+                    <div class="col-sm-4 col-pad">
+                        <div class="category">
+                            <div class="category_bg_box cat-1-bg">
+                                <div class="category-overlay">
+                                    <div class="category-content">
+                                        <h3 class="category-title">
+                                            <a href="#">Disneyland Transfers</a>
+                                        </h3>
+                                        <h4 class="category-subtitle">Comfortable, safe and cost effective. Book your transfer NOW to the magical kingdom.</h4>
+                                       <a><div class="icon">
+                                        Book your Disney transfer
+                                    </div></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-pad">
+                        <div class="category">
+                            <div class="category_bg_box cat-2-bg">
+                                <div class="category-overlay">
+                                    <div class="category-content">
+                                        <h3 class="category-title">
+                                            <a href="#">Paris Transfers</a>
+                                        </h3>
+                                        <h4 class="category-subtitle">Try our award winning service to your hotel, private address or destination.</h4>
+                                    <a><div class="icon">
+                                        Book your transfer
+                                    </div></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-pad">
+                        <div class="category">
+                            <div class="category_bg_box cat-5-bg">
+                                <div class="category-overlay">
+                                   <div class="category-content">
+                                        <h3 class="category-title">
+                                            <a href="#">Airport Transfers</a>
+                                        </h3>
+                                        <h4 class="category-subtitle">Relax and enjoy the ride. Next stop the airport.</h4>
+                                        <a><div class="icon">
+                                        Book your Shuttle
+                                    </div></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+<!--                     <div class="col-sm-3 col-pad">
+                        <div class="category">
+                            <div class="category_bg_box cat-3-bg">
+                                <div class="category-overlay">
+                                    <div class="category-content">
+                                        <h3 class="category-title">
+                                            <a href="#">Travel Agents Specials</a>
+                                        </h3>
+                                        <h4 class="category-subtitle">Register now and earn 15% commission on all of your clients Paris transfer needs!</h4>
+                                    <a><div class="icon">
+                                        Register
+                                    </div></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Categories end -->
+
+<!-- Listing item start -->
+<div class="listing-item content-area-14 bg-grea-3">
+    <div class="container">
+        <!-- Main title -->
+        <div class="main-title">
+            <h1>Book Listings</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <!-- Slick slider area start -->
+        <div class="slick-slider-area">
+            <div class="row slick-carousel" data-slick='{"slidesToShow": 3, "responsive":[{"breakpoint": 1024,"settings":{"slidesToShow": 2}}, {"breakpoint": 768,"settings":{"slidesToShow": 1}}]}'>
+                <div class="slick-slide-item">
+                    <div class="listing-item-box">
+                        <div class="listing-thumbnail">
+                            <a href="#" class="listing-photo">
+                                <img class="d-block w-100" src="img/listing/img-2.jpg" alt="listing-photo">
+                            </a>
+                        </div>
+                        <div class="detail">
+                            <div class="top">
+                                <h3 class="title">
+                                    <a href="#">Tours and activities in Paris</a>
+                                </h3>
+                                <p>Reserve tickets online for a full range of Paristours and activities.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<div class="slick-slide-item">
+                    <div class="listing-item-box">
+                        <div class="listing-thumbnail">
+                            <a href="#" class="listing-photo">
+                                <img class="d-block w-100" src="img/listing/img-2.jpg" alt="listing-photo">
+                            </a>
+                        </div>
+                        <div class="detail">
+                            <div class="top">
+                                <h3 class="title">
+                                    <a href="#">Tours and activities in Paris</a>
+                                </h3>
+                                <p>Reserve tickets online for a full range of Paristours and activities.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<div class="slick-slide-item">
+                    <div class="listing-item-box">
+                        <div class="listing-thumbnail">
+                            <a href="#" class="listing-photo">
+                                <img class="d-block w-100" src="img/listing/img-2.jpg" alt="listing-photo">
+                            </a>
+                        </div>
+                        <div class="detail">
+                            <div class="top">
+                                <h3 class="title">
+                                    <a href="#">Tours and activities in Paris</a>
+                                </h3>
+                                <p>Reserve tickets online for a full range of Paristours and activities.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<div class="slick-slide-item">
+                    <div class="listing-item-box">
+                        <div class="listing-thumbnail">
+                            <a href="#" class="listing-photo">
+                                <img class="d-block w-100" src="img/listing/img-2.jpg" alt="listing-photo">
+                            </a>
+                        </div>
+                        <div class="detail">
+                            <div class="top">
+                                <h3 class="title">
+                                    <a href="#">Tours and activities in Paris</a>
+                                </h3>
+                                <p>Reserve tickets online for a full range of Paristours and activities.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slick-btn">
+                <div class="slick-prev slick-arrow-buton-2 sab-4">
+                    <i class="fa fa-angle-left"></i>
+                </div>
+                <div class="slick-next slick-arrow-buton-2 sab-3">
+                    <i class="fa fa-angle-right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Listing item end -->
+<section class="tf-section tf-about style1 mobie-pd40">
+                <div class="container">
+                    <div class="row">
+                            <div class="col-lg-6 col-md-12">
+                                <div class="image-about tf-animated-fadeup">
+                                    <div class="image image-l animated-effect tfanimated">
+                                        <img src="img/img-2.jpg" alt="">
+                                    </div>
+                                    <div class="image-right animated-effect tfanimated">
+                                        <img src="img/listing/img-2.jpg" alt="">
+                                    </div>
+                                    <div class="about-box effect1 animated-effect tfanimated">
+                                        <div class="icon"><span class="icon-search-research-svgrepo-com"></span></div>
+                                        <p>Managed 
+                                            Services For 
+                                            Company
+                                            Provided</p>
+                                    </div>
+                                </div>
+                            </div>        
+                            <div class="col-lg-6 col-md-12">
+                                <div class="content-box tf-animated-fadeup">
+                                    <div class="title-section animated-effect tfanimated">
+                                        <p class="subtitle mb0">Our Services</p>
+                                        <h2 class="title">The Alternative to 
+                                            the Company Status 
+                                            </h2>
+                                    </div>
+                                    <p class="font-st2 desc animated-effect tfanimated">
+                                        We’re a performance marketing agency It is a long established 
+                                        fact that a reader will be distracted by the readable content of a page when looking at its layout. 
+                                        The point of using Lorem Ipsum is that it has a more
+                                    </p>
+                                    <div class="divider"></div>
+                                    <div class="inner-box animated-effect tfanimated">
+                                        <p class="txt-style">We’re specialists, not generalists.</p>
+                                        <p class="font-st2 desc">Lorem ipsum dolor sit amet sunt in culpa qui officia deserunt mollit anim id est laborum duis aute irure dolor in grow</p>
+                                    </div>
+                                    <div class="btn-about mt-4 animated-effect tfanimated">
+                                        <a href="about.html" class="tf-button style2"><span>About us</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                    <div class="container-fluid mt-5">
+        <div class="row justify-content-center">
+            <div class="col-xl-2 col-lg-2 col-md-4 col-sm-12">
+                <div class="service-info">
+                    <div class="icon">
+                        <i class="fa fa-car"></i>
+                    </div>
+                    <h3>Intercity rides</h3>
+                </div>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-4 col-sm-12">
+                <div class="service-info">
+                    <div class="icon">
+                        <i class="fa fa-car"></i>
+                    </div>
+                    <h3>Chauffeur hailing</h3>
+                </div>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-4 col-sm-12">
+                <div class="service-info">
+                    <div class="icon">
+                        <i class="fa fa-car"></i>
+                    </div>
+                    <h3>Airport Shuttle</h3>
+                </div>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-4 col-sm-12">
+                <div class="service-info">
+                    <div class="icon">
+                        <i class="fa fa-car"></i>
+                    </div>
+                    <h3>Sprinter Class</h3>
+                </div>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-4 col-sm-12">
+                <div class="service-info">
+                    <div class="icon">
+                        <i class="fa fa-car"></i>
+                    </div>
+                    <h3>Electric Class</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+            </section>
+<!-- Testimonial start -->
+<div class="testimonial overview-bgi">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="main-title">
+                    <h1>Our Testimonial</h1>
+                </div>
+            </div>
+        </div>
+        <div class="slick-slider-area">
+            <div class="row slick-carousel wow fadeInUp delay-04s" data-slick='{"slidesToShow": 3, "responsive":[{"breakpoint": 1024,"settings":{"slidesToShow": 2}}, {"breakpoint": 768,"settings":{"slidesToShow": 1}}]}'>
+                <div class="slick-slide-item wow">
+                    <div class="testimonial-inner">
+                        <div class="content-box">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
+                        </div>
+                        <div class="arrow-down"></div>
+                        <div class="media user">
+                            <a href="#">
+                                <img src="img/avatar/avatar-1.jpg" alt="testimonial" class="img-fluid">
+                            </a>
+                            <div class="media-body align-self-center">
+                                <h5>Maria Blank</h5>
+                                <h6>CEO, Travel Company</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slick-slide-item wow">
+                    <div class="testimonial-inner">
+                        <div class="content-box">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
+                        </div>
+                        <div class="arrow-down"></div>
+                        <div class="media user">
+                            <a href="#">
+                                <img src="img/avatar/avatar-1.jpg" alt="testimonial" class="img-fluid">
+                            </a>
+                            <div class="media-body align-self-center">
+                                 <h5>Maria Blank</h5>
+                                <h6>CEO, Travel Company</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slick-slide-item">
+                    <div class="testimonial-inner">
+                        <div class="content-box">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
+                        </div>
+                        <div class="arrow-down"></div>
+                        <div class="media user">
+                            <a href="#">
+                                <img src="img/avatar/avatar-1.jpg" alt="testimonial" class="img-fluid">
+                            </a>
+                            <div class="media-body align-self-center">
+                                 <h5>Maria Blank</h5>
+                                <h6>CEO, Travel Company</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slick-slide-item">
+                    <div class="testimonial-inner">
+                        <div class="content-box">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</p>
+                        </div>
+                        <div class="arrow-down"></div>
+                        <div class="media user">
+                            <a href="#">
+                                <img src="img/avatar/avatar-1.jpg" alt="testimonial" class="img-fluid">
+                            </a>
+                            <div class="media-body align-self-center">
+                                <h5>Maria Blank</h5>
+                                <h6>CEO, Travel Company</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Testimonial end -->
+
+<!-- Blog start -->
+<div class="blog content-area">
+    <div class="container">
+        <!-- Main title -->
+        <div class="main-title">
+            <h1>Latest <span style="color: #b6292f">News</span> & Articles</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <!-- Slick slider area start -->
+        <div class="slick-slider-area clearfix">
+            <div class="row slick-carousel" data-slick='{"slidesToShow": 3, "responsive":[{"breakpoint": 1024,"settings":{"slidesToShow": 2}}, {"breakpoint": 768,"settings":{"slidesToShow": 1}}]}'>
+                <div class="slick-slide-item">
+                    <div class="blog-3">
+                        <div class="blog-photo">
+                            <img src="img/blog/blog-3.jpg" alt="blog" class="img-fluid">
+                            <div class="date-box">
+                                2 Feb 2023
+                            </div>
+                        </div>
+                        <div class="detail">
+                            <h3>
+                                <a href="blog-details.html">Airport Meeting Points With Paris shuttle</a>
+                            </h3>
+                            <div class="post-meta">
+                                <span><a href="#"><i class="flaticon-male"></i>Amdin</a></span>
+                                <span><a href="#"><i class="flaticon-comment"></i>27</a></span>
+                                <span><a href="#"><i class="fa fa-heart-o"></i>27</a></span>
+                            </div>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry....</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slick-slide-item">
+                    <div class="blog-3">
+                        <div class="blog-photo">
+                            <img src="img/blog/blog-3.jpg" alt="blog" class="img-fluid">
+                            <div class="date-box">
+                                2 Feb 2023
+                            </div>
+                        </div>
+                        <div class="detail">
+                            <h3>
+                                <a href="blog-details.html">Airport Meeting Points With Paris shuttle</a>
+                            </h3>
+                            <div class="post-meta">
+                                <span><a href="#"><i class="flaticon-male"></i>Amdin</a></span>
+                                <span><a href="#"><i class="flaticon-comment"></i>27</a></span>
+                                <span><a href="#"><i class="fa fa-heart-o"></i>27</a></span>
+                            </div>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry....</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slick-slide-item">
+                    <div class="blog-3">
+                        <div class="blog-photo">
+                            <img src="img/blog/blog-3.jpg" alt="blog" class="img-fluid">
+                            <div class="date-box">
+                                2 Feb 2023
+                            </div>
+                        </div>
+                        <div class="detail">
+                            <h3>
+                                <a href="blog-details.html">Airport Meeting Points With Paris shuttle</a>
+                            </h3>
+                            <div class="post-meta">
+                                <span><a href="#"><i class="flaticon-male"></i>Amdin</a></span>
+                                <span><a href="#"><i class="flaticon-comment"></i>27</a></span>
+                                <span><a href="#"><i class="fa fa-heart-o"></i>27</a></span>
+                            </div>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry....</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slick-slide-item">
+                    <div class="blog-3">
+                        <div class="blog-photo">
+                            <img src="img/blog/blog-3.jpg" alt="blog" class="img-fluid">
+                            <div class="date-box">
+                                1 Feb 2023
+                            </div>
+                        </div>
+                        <div class="detail">
+                            <h3>
+                                <a href="blog-details.html">Airport Meeting Points With Paris shuttle</a>
+                            </h3>
+                            <div class="post-meta">
+                                <span><a href="#"><i class="flaticon-male"></i>Amdin</a></span>
+                                <span><a href="#"><i class="flaticon-comment"></i>27</a></span>
+                                <span><a href="#"><i class="fa fa-heart-o"></i>27</a></span>
+                            </div>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry....</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Blog end -->
+
+<div class="clearfix"></div>
+
+
+<!-- Footer start -->
+<footer class="footer">
+    <div class="container footer-inner">
+        <div class="row">
+            <div class="col-xl-4 col-lg-3 col-md-6 col-sm-6">
+                <div class="footer-item clearfix">
+                    <img src="img/logos/logo.png" alt="logo" class="f-logo">
+                    <div class="texts">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar. Donec a consectetur nulla.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                <div class="footer-item">
+                    <h4>Contact Us</h4>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="flaticon-pin"></i>Our new standard telephone line is now the +33 (0) 1 85 08 06 03.
+
+                        </li>
+                        <li>
+                            <i class="flaticon-pin"></i> +33 (0) 1 85 08 06 03.
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
+                <div class="footer-item">
+                    <h4>Services</h4>
+                    <ul class="links">
+                        <li>
+                            <a href="#">Intercity rides</a>
+                        </li>
+                        <li>
+                            <a href="#">Chauffeur hailing</a>
+                        </li>
+                        <li>
+                            <a href="about.html">Airport Shuttle</a>
+                        </li>
+                         <li>
+                            <a href="pricing-tables.html">Sprinter Class</a>
+                        </li>
+                        <li>
+                            <a href="blog-details.html">Electric Class</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+                        <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
+                <div class="footer-item">
+                    <h4>Useful Links</h4>
+                    <ul class="links">
+                        <li>
+                            <a href="#">Intercity rides</a>
+                        </li>
+                        <li>
+                            <a href="#">Chauffeur hailing</a>
+                        </li>
+                        <li>
+                            <a href="about.html">Airport Shuttle</a>
+                        </li>
+                         <li>
+                            <a href="pricing-tables.html">Sprinter Class</a>
+                        </li>
+                        <li>
+                            <a href="blog-details.html">Electric Class</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sub-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-12">
+                    <p class="copy">© 2023 <a href="#">Parishuttle</a></p>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <ul class="social-list clearfix">
+                        <li><a href="#" class="facebook-bg"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#" class="twitter-bg"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#" class="google-bg"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#" class="rss-bg"><i class="fa fa-rss"></i></a></li>
+                        <li><a href="#" class="linkedin-bg"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Footer end -->
+
+<!-- Full Page Search -->
+<div id="full-page-search">
+    <button type="button" class="close">×</button>
+    <form action="">
+        <input type="search" value="" placeholder="type keyword(s) here" />
+        <button type="submit" class="btn btn-sm button-theme">Search</button>
+    </form>
+</div>
+
+<script src="js/jquery-2.2.0.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script  src="js/bootstrap-submenu.js"></script>
+<script  src="js/rangeslider.js"></script>
+<script  src="js/jquery.mb.YTPlayer.js"></script>
+<script  src="js/bootstrap-select.min.js"></script>
+<script  src="js/jquery.easing.1.3.js"></script>
+<script  src="js/jquery.scrollUp.js"></script>
+<script  src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script  src="js/leaflet.js"></script>
+<script  src="js/leaflet-providers.js"></script>
+<script  src="js/leaflet.markercluster.js"></script>
+<script  src="js/moment.min.js"></script>
+<script  src="js/daterangepicker.min.js"></script>
+<script  src="js/dropzone.js"></script>
+<script  src="js/slick.min.js"></script>
+<script  src="js/jquery.filterizr.js"></script>
+<script  src="js/jquery.magnific-popup.min.js"></script>
+<script  src="js/jquery.countdown.js"></script>
+<script  src="js/maps.js"></script>
+<script  src="js/app.js"></script>
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script  src="js/ie10-viewport-bug-workaround.js"></script>
+<!-- Custom javascript -->
+<script  src="js/ie10-viewport-bug-workaround.js"></script>
+</body>
+
+</html>
